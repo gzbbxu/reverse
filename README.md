@@ -37,8 +37,12 @@
 .end method
 
 .method public retHello4()Ljava/lang/String;
-.locals 1
+.locals 3
 iget-object v0, p0,Lcom/demo/reversedemo/Hello;->hStr2:Ljava/lang/String;
+const-string v1, "l"
+const-string v2, "t"
+invoke-virtual {v0,v1,v2},Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+move-result-object v0
 return-object v0
 .end method
 
